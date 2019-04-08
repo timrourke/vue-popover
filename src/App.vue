@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Popover msg="Welcome to Your Vue.js + TypeScript App"/>
+    <Popover v-bind:items="popoverItems"/>
   </div>
 </template>
 
@@ -12,8 +12,14 @@ import Popover from './components/Popover.vue';
   components: {
     Popover,
   },
+  data() {
+    return {
+      popoverItems: [],
+    };
+  },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+}
 </script>
 
 <style lang="scss">
