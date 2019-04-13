@@ -1,5 +1,7 @@
 # vue-popover
 
+[![CircleCI](https://circleci.com/gh/timrourke/vue-popover.svg?style=svg)](https://circleci.com/gh/timrourke/vue-popover)
+
 ## Project setup
 ```
 yarn install
