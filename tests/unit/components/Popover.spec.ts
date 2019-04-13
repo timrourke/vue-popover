@@ -102,7 +102,7 @@ describe('Popover.vue', () => {
       },
     });
 
-    expect(wrapper.find('ul').exists()).toBe(false);
+    expect(wrapper.find('.popover-items').exists()).toBe(false);
 
     wrapper.find('.popover-trigger').vm.$emit('click');
 
@@ -118,9 +118,9 @@ describe('Popover.vue', () => {
     const item2 = new Item('item 2', false);
     const items = [item1, item2];
 
-    let clickedItem = null;
+    let clickedItemLabel = null;
     const onItemClick = (item: ItemInterface) => {
-      clickedItem = item;
+      clickedItemLabel = item.getLabel();
     };
 
     const wrapper = shallowMount(Popover, {
@@ -138,10 +138,12 @@ describe('Popover.vue', () => {
 
     wrapper.findAll('.popover-item').at(0).vm.$emit('click');
 
-    expect(clickedItem).toBe(item1);
+    expect(clickedItemLabel).toBe(item1.getLabel());
+
+    wrapper.find('.popover-trigger').vm.$emit('click');
 
     wrapper.findAll('.popover-item').at(1).vm.$emit('click');
 
-    expect(clickedItem).toBe(item2);
+    expect(clickedItemLabel).toBe(item2.getLabel());
   });
 });
