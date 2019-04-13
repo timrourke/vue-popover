@@ -1,6 +1,7 @@
 # vue-popover
 
 [![CircleCI](https://circleci.com/gh/timrourke/vue-popover.svg?style=svg)](https://circleci.com/gh/timrourke/vue-popover)
+[![codecov](https://codecov.io/gh/timrourke/vue-popover/branch/master/graph/badge.svg)](https://codecov.io/gh/timrourke/vue-popover)
 
 ## Project setup
 ```
