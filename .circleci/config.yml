@@ -21,6 +21,10 @@ jobs:
           command: yarn install
 
       - run:
+          name: 'Lint code'
+          command: yarn lint
+
+      - run:
           name: 'Run unit tests'
           command: yarn test:unit
 
