@@ -1,7 +1,7 @@
-import { mount, shallowMount } from '@vue/test-utils';
-import Popover from '../../../src/components/Popover.vue';
-import Item from '../../../src/components/Popover/Item';
+import { shallowMount } from '@vue/test-utils';
+import Item from '@/components/Popover/Item';
 import ItemInterface from '@/components/Popover/ItemInterface';
+import Popover from '@/components/Popover.vue';
 
 describe('Popover.vue', () => {
   it('should have a default label', () => {

@@ -1,4 +1,4 @@
-import Item from '../../../../src/components/Popover/Item';
+import Item from '@/components/Popover/Item';
 
 describe('Item.ts', () => {
   it('has a label', () => {

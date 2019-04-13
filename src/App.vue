@@ -11,11 +11,11 @@
 
 <script lang="ts">
 import { Component, Emit, Vue } from 'vue-property-decorator';
-import Popover from './components/Popover.vue';
-import 'vue-material/dist/vue-material.min.css';
 import { MdButton, MdList } from 'vue-material/dist/components';
-import Item from './components/Popover/Item';
+import 'vue-material/dist/vue-material.min.css';
+import Item from '@/components/Popover/Item';
 import ItemInterface from '@/components/Popover/ItemInterface';
+import Popover from '@/components/Popover.vue';
 
 Vue.use(MdButton);
 Vue.use(MdList);
