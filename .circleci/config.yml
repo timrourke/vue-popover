@@ -26,7 +26,18 @@ jobs:
 
       - run:
           name: 'Run unit tests'
-          command: yarn test:unit
+          command: yarn test:unit --coverage
+      
+      - run:
+          name: 'Collect codecov report'
+          command: npx codecov
+
+      - store_artifacts:
+          path: ./coverage
+          destination: jest
+
+      - store_test_results:
+          path: ./coverage
 
       - save_cache:
           paths:
