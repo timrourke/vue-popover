@@ -13,6 +13,7 @@
     "core-js": "^2.6.5",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
+    "vue-material": "^1.0.0-beta-10.2",
     "vue-property-decorator": "^8.0.0"
   },
   "devDependencies": {
@@ -35,6 +36,10 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
+    "*.d.ts": [
+      "vue-cli-service lint",
+      "git add"
+    ],
     "*.ts": [
       "vue-cli-service lint",
       "git add"

@@ -12,12 +12,18 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env",
-      "jest"
+        "webpack-env",
+        "jest"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
     ],
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "vue-material/dist/components": [
+        "types/vue-material/dist/components"
       ]
     },
     "lib": [
